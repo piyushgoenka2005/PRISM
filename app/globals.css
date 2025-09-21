@@ -189,6 +189,15 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .radar-pulse {
   animation: radar-pulse 3s ease-out infinite;
 }
@@ -211,6 +220,14 @@
 
 .particle-drift {
   animation: particle-drift 6s ease-in-out infinite;
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
 }
 
 /* Smooth scroll behavior */
